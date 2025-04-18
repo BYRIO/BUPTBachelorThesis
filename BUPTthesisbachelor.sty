@@ -98,16 +98,16 @@
 
 \fancypagestyle{mainmatter}{%
 \fancyhf{} % clear all header and footer fields
-\fancyhead[C]{\headfont{北京邮电大学本科毕业设计(论文)}}
+\fancyhead[C]{\headfont{北京邮电大学本科毕业设计（论文）}}
 \fancyfoot[C]{\footnotefont{\thepage}}
 \renewcommand{\headrulewidth}{0.8pt}
 }
 
 \fancypagestyle{frontmatter}{%
 \fancyhf{} % clear all header and footer fields
-\fancyhead[C]{\headfont{北京邮电大学本科毕业设计(论文)}}
+\fancyhead{}
 \fancyfoot[C]{\footnotefont{\thepage}}
-\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\headrulewidth}{0pt}
 }
 
 % Bookmark  (Chinese bookmark supported)
@@ -377,18 +377,18 @@ pdfborder=001, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}  % �
 \makeatother%
 
 % No page number environment for appendix
-\newenvironment{nopagenumber}{%
-    \titleformat{\chapter}[hang]{\textchapterfont}{}{1em}{} %
-    \setcounter{secnumdepth}{0}%
-    \addtocontents{toc}{%
-	\protect\setcounter{tocdepth}{0}%
-	\protect\pagenumberfalse%
-	\ignorespaces}}{%
-    \setcounter{secnumdepth}{3}%
-    \addtocontents{toc}{%
-    \protect\setcounter{tocdepth}{3}%
-	\protect\pagenumbertrue%
-    \ignorespaces}}
+% \newenvironment{nopagenumber}{%
+%     \titleformat{\chapter}[hang]{\textchapterfont}{}{1em}{} %
+%     \setcounter{secnumdepth}{0}%
+%     \addtocontents{toc}{%
+% 	\protect\setcounter{tocdepth}{0}%
+% 	\protect\pagenumberfalse%
+% 	\ignorespaces}}{%
+%     \setcounter{secnumdepth}{3}%
+%     \addtocontents{toc}{%
+%     \protect\setcounter{tocdepth}{3}%
+% 	\protect\pagenumbertrue%
+%     \ignorespaces}}
 % List environment config
 \usepackage[inline]{enumitem}
 % Uncomment the two lines below if you want an list environment to share the same indent with a paragraph and no extra blank before, in or after the list.
