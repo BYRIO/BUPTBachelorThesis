@@ -32,6 +32,7 @@
 \input{main.cfg}    % Main items 
 \include{abstract}  % Abstract
 
+% 目录
 \fancypagestyle{plain}{\pagestyle{frontmatter}}
 \frontmatter
 \tableofcontents % Content
@@ -306,7 +307,6 @@ def plusFunc(a, b):
 %%%%%%%%%%%%%%%%%%%%%%% Main Area ENDs Here %%%%%%%%%%%%%%%%%%%%%%%%
 %\let\cleardoublepage=\cleardoublepagebak
 
-\begin{nopagenumber}
 % Reference
 \clearpage\phantomsection\addcontentsline{toc}{chapter}{参考文献}
 \bibliographystyle{buptbachelor}
@@ -493,7 +493,5 @@ def minusFunc(a, b):
 \blankmatter
 \phantomsection\addcontentsline{toc}{chapter}{教师指导毕业设计（论文）记录表}
 \includepdf[pages=-]{docs/guidance.pdf}
-
-\end{nopagenumber}
 
 \end{document}
