@@ -314,7 +314,8 @@ def plusFunc(a, b):
 
 % Thanks to page
 \clearpage
-\chapter{致\qquad{}谢}
+\chapter*{致谢}
+\phantomsection\addcontentsline{toc}{chapter}{致谢}
 \normalsize\thankwords
 
 % Appendix
@@ -331,8 +332,8 @@ def plusFunc(a, b):
 \makeatother
 
 
-\chapter*{附\qquad{}录}
-\phantomsection\addcontentsline{toc}{chapter}{附\qquad{}录}
+\chapter*{附录}
+\phantomsection\addcontentsline{toc}{chapter}{附录}
 
 \phantomsection\addcontentsline{toc}{section}{附录1\quad{}缩略语表}
 \section*{附录1\quad{}缩略语表}
@@ -400,9 +401,9 @@ def minusFunc(a, b):
 % Translated Article
 \newpage\backmatter
 \thispagestyle{empty}
-\phantomsection\addcontentsline{toc}{chapter}{外\quad{}文\quad{}资\quad{}料}
+\phantomsection\addcontentsline{toc}{chapter}{外文资料}
 % 原文第一页，PDF缩放比例为0.95，可以自行调整
-\includepdf[pages=1, scale=0.95, pagecommand=\begin{center}\translationtitlefont{外\quad{}文\quad{}资\quad{}料}\end{center}]{docs/translation.pdf}
+\includepdf[pages=1, scale=0.95, pagecommand=\begin{center}\translationtitlefont{外文资料}\end{center}]{docs/translation.pdf}
 % 原文剩余部分
 \includepdf[pages=2-, scale=0.95]{docs/translation.pdf}
 
@@ -414,8 +415,8 @@ def minusFunc(a, b):
 \renewcommand{\thelstlisting}{~外\arabic{chapter}-\arabic{lstlisting}~}
 
 \begin{center}
-\phantomsection\addcontentsline{toc}{chapter}{外\quad{}文\quad{}译\quad{}文}
-\translationtitlefont{外\quad{}文\quad{}译\quad{}文}
+\phantomsection\addcontentsline{toc}{chapter}{外文译文}
+\translationtitlefont{外文译文}
 \end{center}
 \vspace{8mm}
 \thispagestyle{empty}
@@ -481,12 +482,12 @@ def minusFunc(a, b):
 
 % 开题报告
 \blankmatter
-\phantomsection\addcontentsline{toc}{chapter}{开\quad{}题\quad{}报\quad{}告}
+\phantomsection\addcontentsline{toc}{chapter}{开题报告}
 \includepdf[pages=-]{docs/openingReport.pdf}
 
 % 中期检查表
 \blankmatter
-\phantomsection\addcontentsline{toc}{chapter}{中\quad{}期\quad{}检\quad{}查\quad{}表}
+\phantomsection\addcontentsline{toc}{chapter}{中期检查表}
 \includepdf[pages=-]{docs/interimReport.pdf}
 
 % 教师指导毕业设计（论文）记录表
