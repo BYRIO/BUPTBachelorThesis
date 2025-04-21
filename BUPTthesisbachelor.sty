@@ -244,6 +244,11 @@ pdfborder=001, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}  % �
 \usepackage{caption}
 \usepackage[position=t,singlelinecheck=off]{subfig}
 
+%使单独成页的图片置顶
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
 % \renewcommand\thesubfigure{\Alph{subfigure}}
 
 \renewcommand{\captionfont}{\ftcaptionfont}
